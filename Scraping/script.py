@@ -50,15 +50,10 @@ def remove_first_n_lines(file_path, clean_file_path, n):
     with open(file_path, 'r', encoding='utf-8') as file:
         lines = file.readlines()
 
-    # Remove the first n lines
     lines = lines[n:]
 
-    # Write the modified content back to the file
     with open(clean_file_path, 'w', encoding='utf-8') as file:
         file.writelines(lines)
 
-# Run the function to extract text
 accepting()
-
-# Remove the first 7 lines from the extracted text file
 remove_first_n_lines(file_path, clean_file_path, 7)
