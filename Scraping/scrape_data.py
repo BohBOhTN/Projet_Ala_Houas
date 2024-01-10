@@ -66,6 +66,6 @@ def accepting():
         
     finally:
         driver.quit()
+        return cleaned_text
 
-# Run the function to extract text, clean it, and save it directly
-accepting()
+# Run the function to extract text, clean it, and save it directly then return it 
